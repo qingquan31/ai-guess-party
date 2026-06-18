@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: ai-guess-party
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: AI_API_URL
+        value: https://api.deepseek.com/chat/completions
+      - key: AI_FAST_MODEL
+        value: deepseek-v4-flash
+      - key: AI_FAST_THINKING
+        value: disabled
+      - key: AI_QUALITY_MODEL
+        value: deepseek-v4-pro
+      - key: AI_QUALITY_THINKING
+        value: enabled
+      - key: AI_QUALITY_REASONING_EFFORT
+        value: high
+      - key: AI_TEMPERATURE
+        value: "0.25"
+      - key: AI_MAX_TOKENS
+        value: "4096"
+      - key: AI_REQUEST_TIMEOUT_MS
+        value: "120000"
+      - key: AI_API_KEY
+        sync: false
