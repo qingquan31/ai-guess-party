@@ -1,0 +1,10 @@
+.env
+server.stdout.log
+server.stderr.log
+node_modules/
+npm-debug.log*
+*.xlsx
+*.docx
+excel-export/
+word-export/
+test-deepseek-map.js
