@@ -1,0 +1,14 @@
+{
+  "name": "ai-guess-party",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI猜物派对多人在线猜物游戏",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check client.js && node --check answer-bank.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
